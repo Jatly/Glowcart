@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yourwebsite.com/</loc>
+    <loc>https://glowcraft.netlify.app/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yourwebsite.com/#products</loc>
+    <loc>https://glowcraft.netlify.app/#products</loc>
   </url>
   <url>
-    <loc>https://yourwebsite.com/#about</loc>
+    <loc>https://glowcraft.netlify.app/#about</loc>
   </url>
   <url>
-    <loc>https://yourwebsite.com/#reviews</loc>
+    <loc>https://glowcraft.netlify.app/#reviews</loc>
   </url>
   <url>
-    <loc>https://yourwebsite.com/#contact</loc>
+    <loc>https://glowcraft.netlify.app/#contact</loc>
   </url>
 </urlset>
