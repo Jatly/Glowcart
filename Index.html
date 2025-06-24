@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlowCraft — Premium Handcrafted Candles | Luxury Scented Candles</title>
+    <meta name="description"
+        content="Discover premium handcrafted candles by GlowCraft. Eco-friendly, hand-poured, long-lasting luxury fragrances. Shop now and elevate your ambiance.">
+    <meta name="keywords"
+        content="handcrafted candles, luxury candles, eco-friendly candles, scented candles, GlowCraft, premium candles, artisanal candles, soy candles, natural candles">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="GlowCraft — Premium Handcrafted Candles" />
+<meta property="og:description" content="Elegant, eco-friendly candles with rich, luxurious scents. Handcrafted with care." />
+<meta property="og:image" content="https://yourwebsite.com/og-image.jpg" />
+<meta property="og:url" content="https://yourwebsite.com/" />
+<meta property="og:type" content="website" />
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=DM+Serif+Display&family=Work+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --primary: #0B0B0B;
+            --champagne: #C9B27C;
+            --ivory: #F6F3EF;
+            --plum: #5B2C6F;
+            --soft-gray: #AFAFAF;
+            --font-heading: 'Cinzel', serif;
+            --font-subheading: 'DM Serif Display', serif;
+            --font-body: 'Work Sans', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--primary);
+            color: var(--ivory);
+            font-family: var(--font-body);
+            line-height: 1.6;
+        }
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            position: relative;
+        }
+
+        header h1 {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            color: var(--champagne);
+        }
+
+        nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: var(--ivory);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--champagne);
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .menu-toggle span {
+            width: 24px;
+            height: 3px;
+            background: var(--ivory);
+            border-radius: 2px;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 8rem 2rem 4rem 2rem;
+            background-color: var(--primary);
+            background-image: url('candle-hero.png');
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 35%;
+            min-height: 100vh;
+
+        }
+
+        .hero h2 {
+            font-family: var(--font-heading);
+            color: var(--champagne);
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+            max-width: 600px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--ivory);
+            margin-bottom: 2rem;
+            max-width: 450px;
+        }
+
+
+        .btn {
+            background-color: var(--champagne);
+            color: var(--primary);
+            border: none;
+            padding: 0.8rem 1.8rem;
+            font-weight: 600;
+            border-radius: 0.4rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--ivory);
+            color: var(--primary);
+        }
+
+        .section {
+            padding: 4rem 2rem;
+        }
+
+        .section h3 {
+            font-family: var(--font-heading);
+            color: var(--champagne);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .section h5 {
+            font-family: var(--font-heading);
+            color: var(--plum);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            text-align: center;
+            max-width: 200px;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product h4 {
+            font-family: --font-subheading;
+            color: var(--ivory);
+            margin-bottom: 0.2rem;
+        }
+
+
+        .product p {
+            color: var(--soft-gray);
+            font-size: 0.9rem;
+        }
+
+        .philosophy,
+        .why-choose {
+            background-color: var(--ivory);
+            color: var(--primary);
+            text-align: center;
+        }
+
+        .philosophy {
+            padding-bottom: 2rem;
+        }
+
+        .why-choose {
+            padding-top: 2rem;
+        }
+
+
+        .philosophy p,
+        .why-choose p {
+            max-width: 700px;
+            margin: 0 auto 1rem;
+            font-size: 1.1rem;
+        }
+
+        .why-choose ul {
+            list-style: none;
+            padding: 0;
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--primary);
+            text-align: left;
+            font-size: 1rem;
+        }
+
+        .why-choose ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonials {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+
+        .testimonial {
+            background-color: #141414;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            color: var(--ivory);
+            width: 250px;
+        }
+
+        .testimonial .stars {
+            color: gold;
+            font-size: 1.2rem;
+        }
+
+        .testimonial p {
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            color: var(--soft-gray);
+        }
+
+        .cta {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .cta h3 {
+            font-family: var(--font-heading);
+            color: var(--champagne);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        footer {
+            padding: 2rem;
+            background-color: #0B0B0B;
+            color: var(--soft-gray);
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--soft-gray);
+            text-decoration: none;
+            margin: 0 0.3rem;
+        }
+
+        footer a:hover {
+            color: var(--champagne);
+        }
+
+        .section+.section {
+            padding-top: 2rem;
+            /* reduce from 4rem default if needed */
+        }
+
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                right: 2rem;
+                background: var(--primary);
+                flex-direction: column;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+
+            nav.open {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+
+        }
+
+        @media (max-width: 768px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            .hero {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* 👈 Centers content horizontally */
+                text-align: center;
+                /* 👈 Centers the text inside elements */
+                background-size: 50%;
+                /* 👈 Make background image smaller */
+                background-position: center top;
+                min-height: 80vh;
+                /* 👈 Adjust height */
+                padding: 4rem 1rem 2rem;
+                /* 👈 Adjust top/bottom padding */
+            }
+
+
+
+            .hero h2 {
+                font-size: 2rem;
+                max-width: 90%;
+            }
+
+            .hero p {
+                font-size: 1rem;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>GlowCraft</h1>
+        <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <h2>Light Up Your Space with Elegance</h2>
+        <p>Discover handcrafted candles infused with luxury, artistry, and warmth.</p>
+        <a href="https://forms.gle/ZwdiyEsD9xYeYfhc7" class="btn" target="_blank">Shop Now</a>
+
+    </section>
+
+    <section class="section" id="products">
+        <h3>Products Highlight</h3>
+        <div class="products">
+            <div class="product">
+                <img src="vanilla.png" alt="Vanilla Candle">
+                <h4>Vanilla Candle</h4>
+                <p>Soft & Comforting</p>
+            </div>
+            <div class="product">
+                <img src="amber.png" alt="Amber Candle">
+                <h4>Amber Candle</h4>
+                <p>Golden Glow, Spiced Allure</p>
+            </div>
+            <div class="product">
+                <img src="lavender.png" alt="Lavender Candle">
+                <h4>Lavender Candle</h4>
+                <p>Calm in Every Breath</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://forms.gle/ZwdiyEsD9xYeYfhc7" class="btn" target="_blank">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="section philosophy" id="about">
+        <h5>The GlowCraft Philosophy</h5>
+        <p>At GlowCraft, every candle is a work of art, hand-poured by skilled artisans who believe that fragrance is
+            more than a scent — it’s an experience. We craft each piece using eco-friendly waxes and premium essential
+            oils, blending timeless tradition with modern luxury.</p>
+    </section>
+
+    <section class="section why-choose">
+        <h5>Why Choose GlowCraft?</h5>
+        <ul>
+            <li>✨ Hand-Poured with Care → Crafted individually by skilled artisans.</li>
+            <li>🌿 Eco-Friendly → Sustainable wax, natural wicks, recyclable packaging.</li>
+            <li>🌸 Premium Fragrances → Curated, long-lasting luxury scents.</li>
+            <li>🎨 Elegant Design → A piece of art, even before you light it.</li>
+        </ul>
+    </section>
+
+    <section class="section" id="reviews">
+        <h3>Reviews</h3>
+        <div class="testimonials">
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p>“Absolutely stunning! The Amber Glow has become part of my evening ritual.”<br> — Sophia M.</p>
+            </div>
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p>“Elegant packaging, divine scents, and it burns beautifully.”<br> — Rahul V.</p>
+            </div>
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p>“GlowCraft candles are a work of art. The fragrance lingers for hours.”<br> — Emily S.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h3>Ready to Transform Your Space?</h3>
+        <a href="https://forms.gle/ZwdiyEsD9xYeYfhc7" class="btn" target="_blank">Shop Now</a>
+    </section>
+
+    <footer id="contact">
+        <p>contact@glowcraft.com</p>
+        <p><a href="#">Instagram</a> • <a href="#">Facebook</a> • <a href="#">Pinterest</a></p>
+    </footer>
+</body>
+
+</html>
